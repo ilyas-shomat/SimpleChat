@@ -48,6 +48,7 @@ public class MessageActivity extends AppCompatActivity {
             }
         });
 
+        
         profile_image = findViewById(R.id.profile_image);
         username = findViewById(R.id.username);
 
