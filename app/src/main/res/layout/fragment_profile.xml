@@ -40,7 +40,8 @@
                 android:textColor="@color/colorPrimaryDark"
                 android:textStyle="bold"
                 android:textSize="18sp"
-                android:id="@+id/username"/>
+                android:id="@+id/username"
+                android:layout_marginBottom="20dp"/>
 
         </RelativeLayout>
 
