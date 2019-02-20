@@ -37,7 +37,6 @@ public class UsersFragment extends Fragment {
 
     EditText search_users;
     
-    
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
