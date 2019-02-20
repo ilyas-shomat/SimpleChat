@@ -10,6 +10,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 
 import com.example.easychat.Adapter.UserAdapter;
 import com.example.easychat.Model.User;
@@ -33,6 +34,8 @@ public class UsersFragment extends Fragment {
     
     private UserAdapter userAdapter;
     private List<User> mUsers;
+
+    EditText search_users;
     
     
     @Override
@@ -47,6 +50,8 @@ public class UsersFragment extends Fragment {
         mUsers = new ArrayList<>();
         
         readUsers();
+
+
         
         return view;
     }
@@ -68,7 +73,7 @@ public class UsersFragment extends Fragment {
                         mUsers.add(user);
                     }
                 }
-                userAdapter = new UserAdapter(getContext(),mUsers);
+                userAdapter = new UserAdapter(getContext(),mUsers,false);
                 recyclerView.setAdapter(userAdapter);
             }
 
